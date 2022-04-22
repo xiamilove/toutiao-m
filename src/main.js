@@ -10,8 +10,13 @@ import './styles/index.less'
 import 'amfe-flexible';
 
 // 自动按需导入vant组件库
-import { Button } from 'vant';
+import { Button, CountDown, Toast, NavBar, Form, Field } from 'vant';
 Vue.use(Button);
+Vue.use(NavBar);
+Vue.use(Form);
+Vue.use(Field);
+Vue.use(CountDown);
+Vue.use(Toast);
 
 Vue.config.productionTip = false
 
