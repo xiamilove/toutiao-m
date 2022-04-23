@@ -9,6 +9,32 @@ const routes = [{
     name: 'login',
     component: () =>
         import ('@/views/login')
+}, {
+    path: '/',
+    redirect: '/home',
+    component: () =>
+        import ('@/views/layout'),
+    children: [{
+        path: 'home',
+        name: 'Home',
+        component: () =>
+            import ('@/views/Home')
+    }, {
+        path: 'qa',
+        name: 'Qa',
+        component: () =>
+            import ('@/views/Qa')
+    }, {
+        path: 'video',
+        name: 'Video',
+        component: () =>
+            import ('@/views/Video')
+    }, {
+        path: 'my',
+        name: 'My',
+        component: () =>
+            import ('@/views/My')
+    }]
 }]
 
 const router = new VueRouter({

@@ -112,6 +112,8 @@ methods:{
     try {
       const res = await login(this.user)
       this.$toast.success('登陆成功')
+      //登录成功返回
+      this.$router.back()
       console.log(res);
       this.$store.commit('setUser',res.data.data)
     } catch (err) {

@@ -8,7 +8,6 @@ export default new Vuex.Store({
     state: {
         // user: JSON.parse(window.localStorage.getItem('token_user'))
         user: getItem('token_user')
-
     },
     getters: {},
     mutations: {

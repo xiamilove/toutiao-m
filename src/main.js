@@ -10,13 +10,21 @@ import './styles/index.less'
 import 'amfe-flexible';
 
 // 自动按需导入vant组件库
-import { Button, CountDown, Toast, NavBar, Form, Field } from 'vant';
+import { Button, Grid, GridItem, Cell, Image as VanImage, CellGroup, Tabbar, TabbarItem, Dialog, CountDown, Toast, NavBar, Form, Field } from 'vant';
 Vue.use(Button);
+Vue.use(Dialog);
 Vue.use(NavBar);
 Vue.use(Form);
+Vue.use(Grid);
+Vue.use(GridItem);
+Vue.use(VanImage);
+Vue.use(Cell);
+Vue.use(CellGroup);
 Vue.use(Field);
 Vue.use(CountDown);
 Vue.use(Toast);
+Vue.use(Tabbar);
+Vue.use(TabbarItem);
 
 Vue.config.productionTip = false
 
